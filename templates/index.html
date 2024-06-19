@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Table</title>
+</head>
+<body>
+    <h1>Data Table</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Survey Date</th>
+            <th>Regular Hokkaido</th>
+            <th>High Octane Hokkaido</th>
+            <th>Light Oil Hokkaido</th>
+            <th>Kerosene Hokkaido</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.SurveyDate }}</td>
+            <td>{{ row.Regular_Hokkaido }}</td>
+            <td>{{ row.High_octane_Hokkaido }}</td>
+            <td>{{ row.light_oil_Hokkaido }}</td>
+            <td>{{ row.Kerosene_Hokkaido }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
